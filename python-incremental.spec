@@ -9,16 +9,16 @@
 Summary:	Library that versions Python projects
 Summary(pl.UTF-8):	Biblioteka wersjonująca projekty w Pythonie
 Name:		python-incremental
-Version:	17.5.0
-Release:	2
+Version:	21.3.0
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/incremental/
 Source0:	https://files.pythonhosted.org/packages/source/i/incremental/incremental-%{version}.tar.gz
-# Source0-md5:	602746e0d438e075a5a9e0678140bba2
+# Source0-md5:	9f7ad12e0c05a12cee52a7350976c4e3
 URL:		https://pypi.org/project/incremental/
 %if %{with python2}
-BuildRequires:	python-modules >= 1:2.6
+BuildRequires:	python-modules >= 1:2.7
 BuildRequires:	python-setuptools
 %if %{with tests}
 BuildRequires:	python-click >= 6.0
@@ -26,7 +26,7 @@ BuildRequires:	python-twisted >= 16.4.0
 %endif
 %endif
 %if %{with python3}
-BuildRequires:	python3-modules >= 1:3.3
+BuildRequires:	python3-modules >= 1:3.4
 BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-click >= 6.0
@@ -39,7 +39,7 @@ BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	pydoctor
 %endif
 # replace with other requires if defined in setup.py
-Requires:	python-modules >= 1:2.6
+Requires:	python-modules >= 1:2.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -53,7 +53,7 @@ Incremental to mała biblioteka do wersjonowania projektów w Pythonie.
 Summary:	Library that versions Python projects
 Summary(pl.UTF-8):	Biblioteka wersjonująca projekty w Pythonie
 Group:		Libraries/Python
-Requires:	python3-modules >= 1:3.3
+Requires:	python3-modules >= 1:3.4
 
 %description -n python3-incremental
 Incremental is a small library that versions your Python projects.
