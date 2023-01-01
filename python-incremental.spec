@@ -9,13 +9,13 @@
 Summary:	Library that versions Python projects
 Summary(pl.UTF-8):	Biblioteka wersjonująca projekty w Pythonie
 Name:		python-incremental
-Version:	21.3.0
-Release:	4
+Version:	22.10.0
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/incremental/
 Source0:	https://files.pythonhosted.org/packages/source/i/incremental/incremental-%{version}.tar.gz
-# Source0-md5:	9f7ad12e0c05a12cee52a7350976c4e3
+# Source0-md5:	9fffa2490ca649550c79a78e85ef2eef
 URL:		https://pypi.org/project/incremental/
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.7
@@ -38,7 +38,6 @@ BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with doc}
 BuildRequires:	pydoctor
 %endif
-# replace with other requires if defined in setup.py
 Requires:	python-modules >= 1:2.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
