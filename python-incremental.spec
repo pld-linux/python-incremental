@@ -10,7 +10,7 @@ Summary:	Library that versions Python projects
 Summary(pl.UTF-8):	Biblioteka wersjonująca projekty w Pythonie
 Name:		python-incremental
 Version:	22.10.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/incremental/
