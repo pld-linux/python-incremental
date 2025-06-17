@@ -4,7 +4,7 @@
 %bcond_with	doc	# API documentation (pydoctor based)
 %bcond_with	tests	# unit tests (require Twisted)
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module
 
 Summary:	Library that versions Python projects
 Summary(pl.UTF-8):	Biblioteka wersjonująca projekty w Pythonie
